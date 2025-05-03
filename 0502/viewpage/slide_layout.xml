@@ -1,0 +1,25 @@
+package com.example.animalgallery
+
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
+
+        val animalList = listOf(
+            Animal("강아지", R.drawable.dog),
+            Animal("고양이", R.drawable.cat),
+            Animal("토끼", R.drawable.rabbit),
+            Animal("곰", R.drawable.bear)
+        )
+
+        recyclerView.layoutManager = GridLayoutManager(this, 2)
+        recyclerView.adapter = AnimalAdapter(animalList)
+    }
+}
