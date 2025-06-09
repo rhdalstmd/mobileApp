@@ -1,0 +1,16 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 하늘색 테마 색상 -->
+    <color name="sky_blue">#64B5F6</color>
+    <color name="sky_blue_dark">#1E88E5</color>
+    <color name="sky_blue_accent">#40C4FF</color>
+    <color name="sky_blue_light">#BBDEFB</color>
+
+    <!-- 일반 색상 -->
+    <color name="white">#FFFFFF</color>
+    <color name="light_background">#F5F5F5</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="selected_background">#E3F2FD</color>
+</resources>
